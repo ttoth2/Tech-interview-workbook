@@ -136,3 +136,37 @@
     API testing is a type of software testing that analyzes an application programming interface (API) to verify that it fulfills its expected functionality, security, performance and reliability.
 #### ✅ What is Data Driven Testing and why is it useful?
     Data-driven testing is data that is external to your functional tests, and is loaded and used to extend your automated test cases.
+#### ✅ What are the challenges and best practices with dynamically loading web elements?
+Common Challenges in Handling Dynamic Elements:
+Dynamic elements often have IDs or classes that change across sessions, making it difficult to locate them using static locators. Some elements are not immediately available in the DOM, requiring the use of explicit waits to avoid NoSuchElementException errors. Elements that change state or content dynamically, such as real-time data or AJAX-based updates, can lead to synchronization issues. Unexpected pop-ups or modal overlays can obscure dynamic elements, disrupting script execution. Reliance on complex locators like nested XPath expressions or CSS selectors can increase script maintenance effort when the page structure changes. Elements that are refreshed or re-rendered during interactions may throw StaleElementReferenceException. 
+
+Best Practices for Handling Dynamic Elements in are:
+-Using Relative Locators
+-Implementing Explicit Waits
+-Avoiding Hard-Coded Delays
+-Using Unique Attributes Wherever Possible
+-Leveraging JavaScript Executor for Complex Interactions
+-Handling Element Staleness Gracefully
+-Regularly Maintaining Test Scripts
+-Using Page Object Model (POM) Design Pattern
+
+
+#### ✅ What are the challenges of Mobile Test Automation?
+device fragmentation 
+different screen resolutions 
+evolving operating systems
+network conditions
+security concerns
+simulating real-world user behavior
+
+## Advanced Topics
+<img src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/05/DevOps-in-a-Selenium-Testing.png" alt="image" width="320" height="220">
+
+#### ✅ What is the difference between CI and CD?
+CI helps developers work together and identify integration issues early on, while CD automates the release of software to production, enabling faster and more reliable releases. 
+
+#### ✅ Describe a Continuous Delivery!
+The the entire software release process is automated. Every revision that is committed triggers an automated flow that builds, tests, and then stages the update. The final decision to deploy to a live production environment is triggered by the developer.
+
+#### ✅ Compare 2 popular CI systems, one of them should be Jenkins!
+#### ✅ What is Docker, why is it useful?
